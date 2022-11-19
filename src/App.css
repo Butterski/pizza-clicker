@@ -1,39 +1,84 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  background: url("./images/pizzaoven2.png");
+  background-color: sandybrown;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.score-area{
+  position:absolute;
+  top: 15px;
+  left: 50%;
+  align-self: center;
+  display: flex;
+  font-size: 48px;
+  font-weight: 700;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-family: 'Comic Sans MS';
 }
-
-.App-link {
-  color: rgb(112, 76, 182);
+.score-area img{
+  width: 45px;
+  height: 45px;
 }
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.pizza{
+  z-index: 10;
+  width: 30rem;
+  cursor: pointer;
+}
+.pizza:hover{
+  zoom: 1.1;
+  transform: rotate(2deg);
+  transition: .2s;
+}
+.pizza:active{
+  zoom: .95;
+  transform: rotate(-2deg);
+  transition: .2s;
+}
+.clicker-area{
+  height: 75%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.menu{
+  width: 100%;
+  height: 25%;
+  background-color: rgb(60, 60, 60);
+  color: white;
+  justify-self: flex-end;
+  display: flex;
+  position: static;
+  bottom: 0;
+  z-index: 3;
+  flex-direction: column;
+}
+.menu span{
+  display: block;
+  float: left;
+  margin-right: 2%;
+  border: 1px solid black;
+  padding: .5rem;
+  border-radius: .375rem;
+  background-color: rgb(50, 50, 50);
+  cursor: pointer;
+}
+.menu span:hover{
+  padding: .7rem;
+  transition: .3s;
+  background-color: rgb(40, 40, 40);
+}
+.menu-top{
+  height: 20%;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.menu-bottom{
+  height: 80%;
+  width: 100%;
 }
