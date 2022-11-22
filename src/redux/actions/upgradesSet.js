@@ -1,9 +1,13 @@
 import { UPGRADES_SET } from "../action";
 
-export const unlock_upgrade = (upgrade) => {
+export const add_ingredient_level = () => {
   return {
-    type: UPGRADES_SET.UNLOCK_UPGRADE,
-    upgrade,
+    type: UPGRADES_SET.ADD_INGREDIENT_LEVEL,
   };
 };
 
+export const add_ads_level = () => {
+  return {
+    type: UPGRADES_SET.ADD_ADS_LEVEL,
+  };
+};

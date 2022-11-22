@@ -1,17 +1,17 @@
 import { COINS_SET } from "../action";
+import { store } from "../store";
 
 const initialState = {
   coinsAmmount: 0,
-  coinsPerClick: 1,
-  coinsPerSecond: 0,
 };
 
 export const coinsReducer = (state = initialState, action) => {
   switch (action.type) {
     case COINS_SET.ADD_CLICK:
+      console.log(action.clicks)
       return {
         ...state,
-        coinsAmmount: state.coinsAmmount + state.coinsPerClick,
+        coinsAmmount: state.coinsAmmount + action.clicks,
       };
     case COINS_SET.ADD_COINS:
       return {

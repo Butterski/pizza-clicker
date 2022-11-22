@@ -6,6 +6,6 @@ export const COINS_SET = {
     ADD_CPS: "ADD_CPS",
 } 
 export const UPGRADES_SET = {
-    UNLOCK_UPGRADE: "UNLOCK_UPGRADE",
-    
+    ADD_INGREDIENT_LEVEL: "ADD_INGREDIENT_LEVEL",
+    ADD_ADS_LEVEL: "ADD_ADS_LEVEL"
 }
