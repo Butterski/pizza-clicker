@@ -1,5 +1,4 @@
 import { COINS_SET } from "../action";
-import { store } from "../store";
 
 export const add_coins = (value) => {
   return {
@@ -7,6 +6,13 @@ export const add_coins = (value) => {
     value,
   };
 };
+
+export const auto_add_coin = () => {
+  return {
+    type: COINS_SET.AUTO_ADD_COIN,
+  };
+};
+
 export const remove_coins = (value) => {
   return {
     type: COINS_SET.REMOVE_COINS,
@@ -15,9 +21,20 @@ export const remove_coins = (value) => {
 };
 
 export const add_click = () => {
-  let clicks = store.getState()['upgrades']['ingredients']['bonusClick']
   return {
     type: COINS_SET.ADD_CLICK,
-    clicks
   };
 };
+
+export const add_cpc = (value) =>{
+  return {
+    type: COINS_SET.ADD_CPC,
+    value,
+  }
+}
+export const add_cps = (value) =>{
+  return {
+    type: COINS_SET.ADD_CPS,
+    value,
+  }
+}

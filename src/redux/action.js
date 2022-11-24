@@ -1,6 +1,7 @@
 export const COINS_SET = {
     ADD_CLICK: "ADD_CLICK",
     ADD_COINS: "ADD_COINS",
+    AUTO_ADD_COIN: "AUTO_ADD_COIN",
     REMOVE_COINS: "REMOVE_COINS",
     ADD_CPC: "ADD_CPC", // coins per click
     ADD_CPS: "ADD_CPS",
