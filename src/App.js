@@ -58,7 +58,7 @@ function App() {
 
   return (
     <div className="App">
-      <DevMenu />
+      {/* <DevMenu /> */}
       <div className="score-container">
         <div className="score-area">
           {abbreviateNumber(coins)}
