@@ -9,4 +9,3 @@
 
  - ~~coins na sekunde~~
  - - ~~bugfix tego ze 2 razy sie robi~~
- - testy frontend
